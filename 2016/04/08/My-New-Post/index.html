@@ -112,6 +112,15 @@
             </li>
             
             
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/git/" class="animsition-link">git<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
             
             <li>
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
@@ -230,21 +239,32 @@
           2016-04-08
       </time>
     
+    
+    | 
+    <a href='/tags/git-ssh-publickey/'>git ssh publickey</a>
+    
+    
 </span>
                 <h1>第一篇博客</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p></p><h3>终于搭建成功了！</h3><br>期间遇到了很多问题，先记录一个git问题：<code>生成SSH密钥</code>（避免每次操作时都要输入密码）<p></p>
-<p>1.查看是否已经有了ssh密钥<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~<span class="regexp">/.ssh</span></span><br></pre></td></tr></table></figure></p>
-<p>2.生成密钥（连续按回车三次，密码为空）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的邮箱"</span></span><br></pre></td></tr></table></figure></p>
-<p>3.最终得到两个文件：<code>id_rsa</code>和<code>id_rsa.pub</code></p>
-<p>4.登录gitLab添加密钥，将<code>id_rsa.pub</code>中的内容复制到密钥处，添加成功。</p>
+      		<p></p><h3>&#x7EC8;&#x4E8E;&#x642D;&#x5EFA;&#x6210;&#x529F;&#x4E86;&#xFF01;</h3><br>&#x671F;&#x95F4;&#x9047;&#x5230;&#x4E86;&#x5F88;&#x591A;&#x95EE;&#x9898;&#xFF0C;&#x5148;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;git bash&#x65F6;&#x7684;&#x95EE;&#x9898;&#xFF1A;<code>&#x751F;&#x6210;SSH&#x5BC6;&#x94A5;</code>&#xFF08;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x64CD;&#x4F5C;&#x65F6;&#x90FD;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF09;<p></p>
+<p>1.&#x67E5;&#x770B;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;ssh&#x5BC6;&#x94A5;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~<span class="regexp">/.ssh</span></span><br></pre></td></tr></table></figure></p>
+<p>2.&#x751F;&#x6210;&#x5BC6;&#x94A5;&#xFF08;&#x8FDE;&#x7EED;&#x6309;&#x56DE;&#x8F66;&#x4E09;&#x6B21;&#xFF0C;&#x5BC6;&#x7801;&#x4E3A;&#x7A7A;&#xFF09;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;&#x4F60;&#x7684;&#x90AE;&#x7BB1;&quot;</span></span><br></pre></td></tr></table></figure></p>
+<p>3.&#x6700;&#x7EC8;&#x5F97;&#x5230;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;<code>id_rsa</code>&#x548C;<code>id_rsa.pub</code></p>
+<p>4.&#x767B;&#x5F55;gitLab&#x6DFB;&#x52A0;&#x5BC6;&#x94A5;&#xFF0C;&#x5C06;<code>id_rsa.pub</code>&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;&#x5BC6;&#x94A5;&#x5904;&#xFF0C;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x3002;</p>
+<hr>
+<p>&#x5F53;&#x514B;&#x9686;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x65F6;&#x62A5;&#x5982;&#x4E0B;&#x9519;&#x8BEF;&#xFF1A;<br><img src="/2016/04/08/My-New-Post/publickey.png" alt="publickey"><br>&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#xFF1A;<br>1.&#x5230;&#x81EA;&#x5DF1;&#x7684;github&#x4E2A;&#x4EBA;&#x8BBE;&#x7F6E;&#x4E2D;<br><img src="/2016/04/08/My-New-Post/settings.png" alt="publickey"><br>2.&#x8FDB;&#x5165;<code>SSH and GPG keys</code>&#x4E2D;&#xFF0C;&#x70B9;&#x51FB;<code>New SSH key</code>&#x628A;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;<code>id_rsa.pub</code>&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;&#x5BC6;&#x94A5;&#x5904;&#xFF0C;title&#x4E3A;&#x4E2A;&#x4EBA;&#x90AE;&#x7BB1;&#xFF0C;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x3002;</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/04/12/git/" style="float: left;">
+        ← 
+    </a>
     
     
 </nav>
