@@ -70,4 +70,4 @@ theme: TKL
 deploy:
   type: git
   repo: git@github.com:z-pfei/z-pfei.github.io.git
-  branch: master
+  branch: hexo
