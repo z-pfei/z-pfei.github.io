@@ -5,7 +5,7 @@ tags: js
 comments: true
 categories: js
 ---
-#### 学习js的delete操作符
+#### 学习js中的delete操作符
 
 <!-- more -->
 
