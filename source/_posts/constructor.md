@@ -1,7 +1,7 @@
 ---
 title: constructor
 date:
-tags: constructor prototype
+tags: [constructor, prototype]
 comments: true
 categories: js
 ---

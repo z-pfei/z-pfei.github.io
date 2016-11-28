@@ -17,7 +17,7 @@ works:
 - works_name: AAA
   works_url: /
 - works_name: BBB
-  works_url: /atom.xml
+  works_url: /
 
 #duoshuo name
 duoshuo: zpfei

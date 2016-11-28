@@ -1,7 +1,7 @@
 ---
 title: 第一篇博客
 date: 2016-04-08 17:56:28
-tags: git ssh publickey
+tags: [git, ssh, publickey]
 comments: true
 categories: git
 ---
